@@ -3,11 +3,11 @@
 # #TKNRGSHUOA*IEYFJZCNMPTH
 KEYS = (
     '#',
-    'S-', 'T-', 'X-', 'C-', 'Y-', 'N-', 'ʔ-', 'W-',
+    'S-', 'X-', 'T-', 'C-', 'Y-', 'N-', 'ʔ-', 'W-',
     'I-', 'E-',
     '*',
     '-Ə', '-W',
-    '-S', '-Y', '-N', '-L', '-T', '-X', '-Θ', '-ʔ', '-@', '-!',
+    '-T', '-X', '-S', '-L', '-N', '-Y', '-Θ', '-ʔ', '-@', '-!',
 )
 
 IMPLICIT_HYPHEN_KEYS = ('I-', 'E-', '5-', '0-', '-Ə', '-W', '*')
@@ -18,15 +18,15 @@ NUMBER_KEY = '#'
 
 NUMBERS = {
     'S-': '1-',
-    'X-': '2-',
+    'T-': '2-',
     'Y-': '3-',
     'ʔ-': '4-',
     'I-': '5-',
     'E-': '0-',
-    '-S': '-6',
-    '-N': '-7',
-    '-T': '-8',
-    '-@': '-9',
+    '-T': '-6',
+    '-S': '-7',
+    '-N': '-8',
+    '-Θ': '-9',
 }
 
 UNDO_STROKE_STENO = '*'
@@ -41,8 +41,8 @@ KEYMAPS = {
     'Gemini PR': {
         '#'         : ('#1', '#2', '#3', '#4', '#5', '#6', '#7', '#8', '#9', '#A', '#B', '#C'),
         'S-'        : 'S1-',
-        'T-'        : 'S2-',
-        'X-'        : 'T-',
+        'X-'        : 'S2-',
+        'T-'        : 'T-',
         'C-'        : 'K-',
         'Y-'        : 'P-',
         'N-'        : 'W-',
@@ -53,12 +53,12 @@ KEYMAPS = {
         '*'         : ('*1', '*2', '*3', '*4'),
         '-Ə'        : '-E',
         '-W'        : '-U',
-        '-S'        : '-F',
-        '-Y'        : '-R',
-        '-N'        : '-P',
+        '-T'        : '-F',
+        '-X'        : '-R',
+        '-S'        : '-P',
         '-L'        : '-B',
-        '-T'        : '-L',
-        '-X'        : '-G',
+        '-N'        : '-L',
+        '-Y'        : '-G',
         '-Θ'        : '-T',
         '-ʔ'        : '-S',
         '-@'        : '-D',
@@ -67,34 +67,34 @@ KEYMAPS = {
     },
     'Keyboard': {
         '#'         : ('1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '='),
-        'T-'        : 'q',
-        'K-'        : 'a',
-        'N-'        : 'w',
-        'R-'        : 's',
-        'G-'        : 'e',
-        'S-'        : 'd',
-        'H-'        : 'r',
-        'U-'        : 'f',
-        'O-'        : 'c',
-        'A-'        : 'v',
+        'S-'        : 'q',
+        'X-'        : 'a',
+        'T-'        : 'w',
+        'C-'        : 's',
+        'Y-'        : 'e',
+        'N-'        : 'd',
+        'ʔ-'        : 'r',
+        'W-'        : 'f',
+        'I-'        : 'c',
+        'E-'        : 'v',
         '*'         : ('t', 'g', 'y', 'h'),
-        '-I'        : 'n',
-        '-E'        : 'm',
-        '-Y'        : 'u',
-        '-F'        : 'j',
-        '-J'        : 'i',
-        '-Z'        : 'k',
-        '-C'        : 'o',
-        '-N'        : 'l',
-        '-M'        : 'p',
-        '-P'        : ';',
-        '-T'        : '[',
-        '-H'        : '\'',
+        '-Ə'        : 'n',
+        '-W'        : 'm',
+        '-T'        : 'u',
+        '-X'        : 'j',
+        '-S'        : 'i',
+        '-L'        : 'k',
+        '-N'        : 'o',
+        '-Y'        : 'l',
+        '-Θ'        : 'p',
+        '-ʔ'        : ';',
+        '-@'        : '[',
+        '-!'        : '\'',
         'arpeggiate': 'space',
         # Suppress adjacent keys to prevent miss-strokes.
         'no-op'     : ('z', 'x', 'b', ',', '.', '/', ']', '\\'),
     },
 }
 
-#DICTIONARIES_ROOT = 'asset:plover_viet:dictionaries'
-#DEFAULT_DICTIONARIES = ('viet_user.json', 'viet_main.json', 'viet_commands.json')
+DICTIONARIES_ROOT = 'asset:plover_halkomelem:dictionaries'
+#DEFAULT_DICTIONARIES = ('halkomelem_user.json', 'halkomelem_main.json', 'halkomelem_commands.json')
